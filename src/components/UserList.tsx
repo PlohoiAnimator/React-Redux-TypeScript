@@ -1,9 +1,8 @@
 import { FC } from "react"
-import { useTypedSelector } from "../store/hooks/useTypedSelector"
+import { useTypedSelected } from "../hook/useTypedSelector"
 
 const UserList: FC = () => {
-    const {users, isLoading, errors} = useTypedSelector(state => state.user)
-    console.log(users)
+    const useTypedSelected = useTypedSelected(state => state.)
     return (
         <div>
 
