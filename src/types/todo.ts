@@ -1,12 +1,12 @@
 export interface TodoState {
-    todos: any[],
-    loading: boolean,
-    error: null|string,
-    page: number,
-    limit: number
+    todos: any[];
+    loading: boolean;
+    error: null | string;
+    page: number;
+    limit: number;
 }
 
-export enum todoActionTypes {
+export enum TodoActionTypes {
     FETCH_TODOS = 'FETCH_TODO',
     FETCH_TODOS_SUCCESS = 'FETCH_TODO_SUCCESS',
     FETCH_TODOS_ERROR = 'FETCH_TODO_ERROR',
@@ -14,21 +14,21 @@ export enum todoActionTypes {
 }
 
 interface FetchTodoAction {
-    type: todoActionTypes.FETCH_TODOS
+    type: TodoActionTypes.FETCH_TODOS
 }
 
 interface FetchTodoSuccessAction {
-    type: todoActionTypes.FETCH_TODOS_SUCCESS,
+    type: TodoActionTypes.FETCH_TODOS_SUCCESS,
     payload: any[]
 }
 
 interface FetchTodoErrorAction {
-    type: todoActionTypes.FETCH_TODOS_ERROR,
+    type: TodoActionTypes.FETCH_TODOS_ERROR,
     payload: string
 }
 
 interface SetPageAction {
-    type: todoActionTypes.SET_PAGE,
+    type: TodoActionTypes.SET_PAGE,
     payload: number
 }
 
